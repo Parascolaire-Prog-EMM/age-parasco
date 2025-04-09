@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>age</title>
+</head>
+<body>
+    <input type="number" id="input_age" placeholder="Enter your age">
+    <button onclick="setAge()">Set Age</button>
+    <button onclick="addOneYear()">Add One Year</button>
+    <br>
+    <p id="age">You are 0 years old</p>
+</body>
+<script>
+    var age = 0
+    function setAge() {
+        age = document.getElementById('input_age').value;
+        document.getElementById('age').innerText = "You are " + age + " years old";
+    }
+    function addOneYear() {
+        age = age + 1;
+        document.getElementById('age').innerText = `Votre âge est de ${age} ans`;
+    }
+</script>
+</html>
